@@ -1,9 +1,20 @@
 import React from "react"
 
+import {
+    Row,
+    Container,
+    Col,
+    Input,
+    Button,
+    InputGroup,
+    InputGroupAddon
+  } from "reactstrap";
 
 const Home = () => {
     return (
-        <div>This is the Home Page.</div>
+        <Container>
+            This is the Home Page.
+        </Container>
     )
 }
 

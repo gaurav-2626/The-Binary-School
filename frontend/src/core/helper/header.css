@@ -1,0 +1,31 @@
+.nav {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 10px 10px;
+    text-align: right;
+}
+
+.textcss{
+   
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+
+    padding: 25px 50px 25px 25px;
+    /* or 408% */
+
+    /* display: flex; */
+    /* align-items: center; */
+
+    color: #545454;
+
+}
+
+.special{
+    padding-left: 70px;
+    background: linear-gradient(to right, #FF5454 40%, #FDB797 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    /* color:  linear-gradient(to right,#FF5454 , #FDB797);  */
+}
