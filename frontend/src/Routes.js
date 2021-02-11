@@ -1,22 +1,17 @@
 //react router
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 //pages
-import Home from "./pages/home/home.js"
-
-
-
-
+import Home from "./pages/home/home.js";
 
 const Routes = () => {
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+      </Switch>
+    </Router>
+  );
+};
 
-    return (
-      <Router>
-          <Switch>
-            <Route exact path="/" component={Home}/>
-          </Switch>
-      </Router>
-    );
-  }
-  
-  export default Routes;
+export default Routes;
