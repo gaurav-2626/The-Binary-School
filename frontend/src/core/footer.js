@@ -2,6 +2,9 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 
+// stylesheets
+import "./helper/footer.css";
+
 // components
 import { ReactComponent as LocationIcon } from "../uploads/pin.svg";
 import { ReactComponent as MailIcon } from "../uploads/email.svg";
@@ -175,5 +178,5 @@ const Footer = () => {
     </div>
   );
 };
-// DOUBT: whether to return with withRouter() or not?
+
 export default withRouter(Footer);

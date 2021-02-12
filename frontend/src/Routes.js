@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 //react router
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
+=======
+// react libraries
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+>>>>>>> tarun
 
 // components
 import Home from "./pages/home/Home.js";
