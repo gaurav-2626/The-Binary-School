@@ -1,4 +1,5 @@
 import React from "react"
+import Header from "../../core/Header.js"
 
 import {
     Row,
@@ -12,9 +13,10 @@ import {
 
 const Home = () => {
     return (
-        <Container>
+        <div>
+            <Header/>
             This is the Home Page.
-        </Container>
+        </div>
     )
 }
 

@@ -1,9 +1,12 @@
 import React from "react"
-
+import Header from "../../core/Header.js"
 
 const Team = () => {
     return (
-        <div>This is the Team Page.</div>
+        <div>
+            <Header/>
+            This is the Team Page.
+        </div>
     )
 }
 

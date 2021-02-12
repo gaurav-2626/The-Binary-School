@@ -4,51 +4,69 @@ import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 
-//css
+//router
 import {Link} from "react-router-dom"
 
 //css
 import "./helper/header.css"
+
+//assets
+import companyLogo from "../uploads/{b}.svg"
 
 
 //function
 const Header = () => {
     return (
         <div>
-        <ul className="nav justify-content-end">
-          <li className="nav-item">
-            <Link className="nav-link textcss" to="/">
-              HOME
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              className="nav-link textcss"
-              to="/course"
-            >
-              COURSE
-            </Link>
-          </li>
-          
-          <li className="nav-item">
-            <Link
-              className="nav-link textcss"
-              to="/team"
-            >
-              TEAM
-            </Link>
-          </li>
+        
+       
+        <nav className="navbar navbar-expand-lg container-fluid header">
 
-          <li className="nav-item">
-            <Link
-              className="nav-link textcss"
-              to="/login"
-            >
-              <span className="special">LOGIN</span>
-            </Link>
-          </li>
+            <div class="navbar-brand" style={{margin: "7px 0px 7px 30px"}}><img src={companyLogo} width="50" height="50" alt=""/></div>
 
-        </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul className="navbar-nav ml-auto">
+                
+                <li className="nav-item">
+                    <Link className="nav-link" to="/">
+                        HOME
+                    </Link>
+                </li>
+                <li className="nav-item">
+                    <Link
+                    className="nav-link"
+                    to="/course"
+                    >
+                        COURSE
+                    </Link>
+                </li>
+                
+                <li className="nav-item">
+                    <Link
+                    className="nav-link"
+                    to="/team"
+                    >
+                        TEAM
+                    </Link>
+                </li>
+
+                <li className="nav-item">
+                    <Link
+                    className="nav-link"
+                    to="/login"
+                    >
+                    <span className="login-button">LOGIN</span>
+                    </Link>
+                </li>
+
+                </ul>
+            </div>
+           
+        </nav>
       </div>
     )
 }

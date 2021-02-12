@@ -1,9 +1,12 @@
 import React from "react"
-
+import Header from "../../core/Header.js"
 
 const Course = () => {
     return (
-        <div>This is the Course Page.</div>
+        <div>
+            <Header/>
+            This is the Course Page.
+        </div>
     )
 }
 
