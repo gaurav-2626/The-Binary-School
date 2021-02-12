@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 
 //router
-import {Link} from "react-router-dom"
+import {Link,withRouter} from "react-router-dom"
 
 //css
 import "./helper/header.css"
@@ -71,4 +71,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default withRouter(Header);
