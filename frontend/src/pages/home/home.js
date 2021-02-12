@@ -2,18 +2,17 @@
 import React from "react";
 
 //components
-import Footer from "../../core/Footer.js";
-import Header from "../../core/Header.js";
+import Footer from "../../core/footer.js";
+import Header from "../../core/header.js";
 
 const Home = () => {
   return (
     <div>
-      <Header/>
+      <Header />
       <h1>This is Home Page</h1>
       <Footer />
     </div>
   );
 };
-
 
 export default Home;
