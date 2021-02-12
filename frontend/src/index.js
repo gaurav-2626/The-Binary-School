@@ -1,9 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import Routes from './Routes.js';
+// react libraries
+import React from "react";
+import ReactDOM from "react-dom";
 
-ReactDOM.render(
-    <Routes />,
-  document.getElementById('root')
-);
+// stylesheets
+import "./index.css";
+
+// components
+import Routes from "./Routes.js";
+
+ReactDOM.render(<Routes />, document.getElementById("root"));
