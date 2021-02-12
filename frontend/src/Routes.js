@@ -1,5 +1,5 @@
 // react libraries
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // components
 import Home from "./pages/home/Home.js";
