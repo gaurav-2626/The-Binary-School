@@ -1,44 +1,42 @@
 .navbar {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 0px 0px 10px 10px;
-    text-align: right;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 10px 10px;
+  text-align: right;
 }
 
-.header .nav-link{
-   
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
+.header .nav-link {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3rem;
 
-    margin : 0px 30px 0px 30px;
-    padding : 7px 0px 7px 0px;
-    color: #545454;
-
+  margin: 0px 30px 0px 30px;
+  padding: 7px 0px 7px 0px;
+  color: #545454;
 }
 
 .header .nav-link:hover {
-    color: #545454;
+  color: #545454;
+}
+
+.header .login-button {
+  margin-left: 100px;
+  background: linear-gradient(to right, #ff5454 40%, #fdb797 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header .navbar-toggler {
+  margin: 10px 20px 10px 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .header .nav-link {
+    margin: 10px 30px 0px 30px;
   }
 
-.header .login-button{
-    margin-left: 100px;
-    background: linear-gradient(to right, #FF5454 40%, #FDB797 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.header .navbar-toggler{
-    margin : 10px 20px 10px 10px;
-}
-
-@media screen and (max-width  : 1024px){
-    .header .nav-link{
-        margin : 10px 30px 0px 30px;
-    }
-
-    .header .navbar-brand{
-        margin :  "7px 0px 7px 15px";
-    }
+  .header .navbar-brand {
+    margin: "7px 0px 7px 15px";
+  }
 }

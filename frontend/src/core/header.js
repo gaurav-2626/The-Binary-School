@@ -14,8 +14,8 @@ const Header = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg container-fluid header">
-        <div class="navbar-brand" style={{ margin: "7px 0px 7px 30px" }}>
-          <img src={companyLogo} width="50" height="50" alt="" />
+        <div class="navbar-brand" style={{ marginLeft: "30px" }}>
+          <img src={companyLogo} width="75" height="75" alt="logo" />
         </div>
 
         <button
