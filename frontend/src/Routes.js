@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-//react router
-=======
 // react libraries
->>>>>>> tarun
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // components
