@@ -1,74 +1,61 @@
-import React from "react"
-
-//bootstrap
-import "bootstrap/dist/css/bootstrap.min.css"
-
+import React from "react";
 
 //router
-import {Link,withRouter} from "react-router-dom"
+import { Link, withRouter } from "react-router-dom";
 
 //css
-import "./helper/header.css"
+import "./helper/header.css";
 
 //assets
-import companyLogo from "../uploads/{b}.svg"
-
+import companyLogo from "../uploads/{b}.svg";
 
 //function
 const Header = () => {
-    return (
-        <div>
-        
-       
-        <nav className="navbar navbar-expand-lg container-fluid header">
+  return (
+    <div>
+      <nav className="navbar navbar-expand-lg container-fluid header">
+        <div class="navbar-brand" style={{ marginLeft: "30px" }}>
+          <img src={companyLogo} width="75" height="75" alt="logo" />
+        </div>
 
-            <div class="navbar-brand" style={{margin: "7px 0px 7px 30px"}}><img src={companyLogo} width="50" height="50" alt=""/></div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-                <i class="fas fa-bars"></i>
-            </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <Link className="nav-link" to="/">
+                HOME
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/course">
+                COURSE
+              </Link>
+            </li>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav ml-auto">
-                
-                <li className="nav-item">
-                    <Link className="nav-link" to="/">
-                        HOME
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link
-                    className="nav-link"
-                    to="/course"
-                    >
-                        COURSE
-                    </Link>
-                </li>
-                
-                <li className="nav-item">
-                    <Link
-                    className="nav-link"
-                    to="/team"
-                    >
-                        TEAM
-                    </Link>
-                </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/team">
+                TEAM
+              </Link>
+            </li>
 
-                <li className="nav-item">
-                    <Link
-                    className="nav-link"
-                    to="/login"
-                    >
-                    <span className="login-button">LOGIN</span>
-                    </Link>
-                </li>
-
-                </ul>
-            </div>
-           
-        </nav>
-      </div>
-    )
-}
+            <li className="nav-item">
+              <Link className="nav-link" to="/login">
+                <span className="login-button">LOGIN</span>
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  );
+};
 
 export default withRouter(Header);

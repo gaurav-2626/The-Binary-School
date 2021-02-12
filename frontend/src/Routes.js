@@ -1,10 +1,10 @@
-//react router
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
+// react libraries
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // components
-import Home from "./pages/home/Home.js";
-import Course from "./pages/course/Course.js";
-import Team from "./pages/team/Team.js";
+import Home from "./pages/home/home.js";
+import Course from "./pages/course/course.js";
+import Team from "./pages/team/team.js";
 
 const Routes = () => {
   return (

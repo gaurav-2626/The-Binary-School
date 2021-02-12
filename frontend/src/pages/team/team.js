@@ -2,13 +2,13 @@
 import React from "react";
 
 //components
-import Header from "../../core/Header.js"
-import Footer from "../../core/Footer.js";
+import Header from "../../core/header.js";
+import Footer from "../../core/footer.js";
 
 const Team = () => {
   return (
     <div>
-      <Header/>
+      <Header />
       <h1>This is Team Page</h1>
       <Footer />
     </div>
