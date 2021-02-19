@@ -2,8 +2,8 @@
 import React from "react";
 
 //components
-import Footer from "../../core/footer.js";
-import Header from "../../core/header.js";
+import Footer from "../../core/Footer.js";
+import Header from "../../core/Header.js";
 
 const Home = () => {
   return (

@@ -5,14 +5,18 @@
   text-align: right;
 }
 
+.header .logo{
+  width  : 3.5rem;
+  height : 3.5rem;
+  margin-left: 5rem;
+}
+
 .header .nav-link {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 1.3rem;
-
-  margin: 0px 30px 0px 30px;
-  padding: 7px 0px 7px 0px;
+  font-size: 1.5rem;
+  margin: 0 1.5rem 0 1.5rem;
   color: #545454;
 }
 
@@ -21,22 +25,22 @@
 }
 
 .header .login-button {
-  margin-left: 100px;
+  margin-left: 5rem;
   background: linear-gradient(to right, #ff5454 40%, #fdb797 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .header .navbar-toggler {
-  margin: 10px 20px 10px 10px;
+  margin: 1rem 2rem 1rem 1rem;
 }
 
 @media screen and (max-width: 1024px) {
   .header .nav-link {
-    margin: 10px 30px 0px 30px;
+    margin: 1rem 2rem 0 3rem;
   }
 
-  .header .navbar-brand {
-    margin: "7px 0px 7px 15px";
+  .header .logo {
+    margin: 0 1.5rem 0 2.5rem;
   }
 }
