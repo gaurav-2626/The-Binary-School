@@ -32,9 +32,10 @@
 
 .header .login-button {
   margin-left: 5vw;
-  margin-right: 2vw;
+  /* margin-right: 2vw; */
   background: linear-gradient(to right, #ff5454 40%, #fdb797 100%);
   -webkit-background-clip: text;
+  background-clip : text;
   -webkit-text-fill-color: transparent;
 }
 

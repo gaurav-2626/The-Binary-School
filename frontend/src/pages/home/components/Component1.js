@@ -6,7 +6,7 @@ const Component1 = () => {
         <div className="container-fluid scroll component1">
             <div className="row">
                 <div className="col">
-                    
+                    <h1>Hello </h1>
                 </div>
             </div>
         </div>
