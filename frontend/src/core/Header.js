@@ -13,7 +13,7 @@ import companyLogo from "../uploads/{b}.svg";
 const Header = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg container-fluid header fixed-top">
+      <nav className="navbar navbar-expand-lg container-fluid header">
         <div className="navbar-brand">
           <img src={companyLogo} alt="logo" className="logo" />
         </div>
