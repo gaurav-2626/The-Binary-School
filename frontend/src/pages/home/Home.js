@@ -6,7 +6,7 @@ import Footer from "../../core/Footer.js";
 import Header from "../../core/Header.js";
 
 //components
-import Component1 from "./components/Component1.js"
+import Component1 from "./components/Component1.js";
 
 const Home = () => {
   return (
