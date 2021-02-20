@@ -24,10 +24,10 @@ const Header = () => {
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
         >
-          <i class="fas fa-bars"></i>
+          <i className="fas fa-bars"></i>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <Link className="nav-link" to="/">
