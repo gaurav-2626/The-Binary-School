@@ -1,5 +1,5 @@
 // react libraries
-import React from "react";
+import { React, useState, useEffect } from "react";
 import { Link, withRouter } from "react-router-dom";
 
 // stylesheets
@@ -15,20 +15,33 @@ import { ReactComponent as YoutubeIcon } from "../uploads/youtube.svg";
 import { ReactComponent as LinkedinIcon } from "../uploads/linkedin.svg";
 
 const Footer = () => {
+  // states
+  const [viewPortWidth, setViewPortWidth] = useState(window.innerWidth);
+  const [viewPortHeight, setViewPortHeight] = useState(window.innerHeight);
+
+  // TODO: hooks
+  window.addEventListener("resize", () => {
+    setViewPortWidth(window.innerWidth);
+    setViewPortHeight(window.innerHeight);
+  });
+
   // TODO: here window.innerWidth should be replaced by something dynamic and local attribute
-  const startY = 200;
-  const endY = 200;
-  const footerHeight = 450;
-  const a = [0, startY];
-  const b = [window.innerWidth, endY];
-  const c = [window.innerWidth, endY + footerHeight];
-  const d = [0, endY + footerHeight];
+  const footerWidth = Math.max(viewPortHeight, viewPortWidth);
+  const totalHeight = 600 * (footerWidth / 1920);
+  const footerHeight = 400 * (footerWidth / 1920);
 
-  const c1 = [0.75 * window.innerWidth, endY + 0.5 * footerHeight];
-  const c2 = [0.6 * window.innerWidth, startY - 0.85 * footerHeight];
+  const y = totalHeight - footerHeight;
+  const a = [0, y];
+  const b = [footerWidth, y];
+  const c = [footerWidth, y + footerHeight];
+  const d = [0, y + footerHeight];
 
-  const c3 = [0.45 * window.innerWidth, startY - footerHeight];
-  const c4 = [0.55 * window.innerWidth, endY + 0.5 * footerHeight];
+  const c1 = [0.75 * footerWidth, y + 0.5 * footerHeight];
+  const c2 = [0.6 * footerWidth, y - 0.85 * footerHeight];
+
+  const c3 = [0.45 * footerWidth, y - footerHeight];
+  const c4 = [0.55 * footerWidth, y + 0.5 * footerHeight];
+
   const path1 = (
     <path
       d={`
@@ -53,9 +66,10 @@ const Footer = () => {
       fill="url(#gradient2)"
     />
   );
+
   const footerVectors = (
     <div className="footer-vectors">
-      <svg height="650" width="100%">
+      <svg height={totalHeight} width="100%">
         <defs>
           <linearGradient id="gradient1" x1="65%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="#FDB797" />
@@ -73,7 +87,7 @@ const Footer = () => {
   );
   const footerNav = (
     <div>
-      <ul className="nav justify-content-center">
+      <ul className="nav justify-content-center mx-3">
         <li className="nav-item">
           <Link className="nav-link" to="/team">
             CONTACT US
@@ -89,6 +103,12 @@ const Footer = () => {
         <li className="nav-item">
           <Link className="nav-link" to="/">
             CAREERS
+          </Link>
+        </li>
+        <span className="nav-link-partition">|</span>
+        <li className="nav-item">
+          <Link className="nav-link" to="/">
+            FAQ
           </Link>
         </li>
         <span className="nav-link-partition">|</span>
@@ -110,56 +130,23 @@ const Footer = () => {
     <div className="footer-items">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-10">
+          <div className="col-12">
             <div className="address">
-              <LocationIcon
-                height="30px"
-                width="30px"
-                fill="white"
-                className="mx-3"
-              />
-              Building - XYZ, Cyber City, Gurugram, Haryana, India
+              <LocationIcon className="address-icon" />
+              <span className="address-text">
+                Building - XYZ, Cyber City, Gurugram, Haryana, India
+              </span>
             </div>
-            <div className="support-email">
-              <MailIcon
-                height="30px"
-                width="30px"
-                fill="white"
-                className="mx-3"
-              />
-              support@thebinaryschool.com
+            <div className="mail">
+              <MailIcon className="mail-icon" />
+              <span className="mail-text">support @ thebinaryschool.com</span>
             </div>
-            <div className="media-handlers px-1">
-              <TwitterIcon
-                height="45px"
-                width="45px"
-                fill="white"
-                className="m-3"
-              />
-              <FacebookIcon
-                height="45px"
-                width="45px"
-                fill="white"
-                className="m-3"
-              />
-              <LinkedinIcon
-                height="45px"
-                width="45px"
-                fill="white"
-                className="m-3"
-              />
-              <InstaIcon
-                height="45px"
-                width="45px"
-                fill="white"
-                className="m-3"
-              />
-              <YoutubeIcon
-                height="45px"
-                width="45px"
-                fill="white"
-                className="m-3"
-              />
+            <div className="media-handlers">
+              <TwitterIcon className="twitter-icon" />
+              <FacebookIcon className="facebook-icon" />
+              <LinkedinIcon className="linkedin-icon" />
+              <InstaIcon className="insta-icon" />
+              <YoutubeIcon className="youtube-icon" />
             </div>
           </div>
         </div>
@@ -171,8 +158,9 @@ const Footer = () => {
       </div>
     </div>
   );
+
   return (
-    <div>
+    <div className="footer">
       {footerItems}
       {footerVectors}
     </div>

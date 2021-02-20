@@ -14,20 +14,20 @@ const Header = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg container-fluid header">
-        <div class="navbar-brand" style={{ marginLeft: "30px" }}>
+        <div className="navbar-brand" style={{ marginLeft: "30px" }}>
           <img src={companyLogo} width="75" height="75" alt="logo" />
         </div>
 
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
         >
-          <i class="fas fa-bars"></i>
+          <i className="fas fa-bars"></i>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <Link className="nav-link" to="/">
