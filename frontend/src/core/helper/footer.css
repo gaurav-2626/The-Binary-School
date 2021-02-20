@@ -1,37 +1,62 @@
-.footer-vectors {
-  width: 100%;
-  position: fixed;
+.footer {
+  position: relative;
   bottom: 0;
-  z-index: -1;
 }
 .footer-items {
   width: 100%;
-  position: fixed;
-  bottom: 10px;
+  position: absolute;
+  bottom: 0;
 }
 .footer-items .address,
-.support-email {
+.mail {
   color: #e5e5e5;
   font-family: "Poppins", sans-serif;
-  font-size: 1.4rem;
   font-weight: 200;
-  margin: 10px;
+  font-size: 1vmax;
+  margin: 0.5vmax;
 }
+.footer-items .address-text,
+.mail-text {
+  margin: 0 0 0 0.5vmax;
+}
+.footer-items .media-handlers {
+  font-size: 1vmax;
+  margin: 1vmax 0.5vmax;
+}
+.footer-items .address-icon,
+.mail-icon {
+  height: 1.5vmax;
+  width: 1.5vmax;
+  fill: white;
+  margin: 0 0.25vmax;
+}
+.footer-items .media-handlers .twitter-icon,
+.facebook-icon,
+.linkedin-icon,
+.insta-icon,
+.youtube-icon {
+  height: 2vmax;
+  width: 2vmax;
+  fill: white;
+  margin-right: 1vmax;
+}
+
 .footer-items .horizontal-line {
   background-color: #cacaca;
-  margin: 5px;
+  margin: 5px 0 5px 0;
 }
 .footer-items .nav-link,
 .nav-link-partition {
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 1.65rem;
-  padding: 0.5rem 0.5rem;
+  font-size: 1.5vmax;
+  padding: 0.5vmax 0.5vmax;
 }
 .footer-items .copyright {
   color: #cacaca;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  margin: 0 0 5px 0;
+  font-size: 1vmax;
+  margin: 0 0 10px 0;
 }

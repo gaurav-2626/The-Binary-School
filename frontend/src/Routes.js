@@ -2,9 +2,9 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // components
-import Home from "./pages/home/home.js";
+import Home from "./pages/home/Home.js";
 import Course from "./pages/course/Course.js";
-import Team from "./pages/team/team.js";
+import Team from "./pages/team/Team.js";
 
 const Routes = () => {
   return (
