@@ -14,12 +14,12 @@ const Header = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg container-fluid header">
-        <div class="navbar-brand">
+        <div className="navbar-brand">
           <img src={companyLogo} alt="logo" className="logo" />
         </div>
 
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
