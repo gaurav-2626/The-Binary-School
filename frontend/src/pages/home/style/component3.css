@@ -1,0 +1,49 @@
+.component3 .head-text{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.8rem;
+    /* 3.1vw */
+    /* align-items: center; */
+    color: #545454;
+    margin : 2vw 0 0 4.2vw;
+    /* 4.2rem */
+}
+
+.component3 .head-text span{
+    color : #EC4897;
+
+}
+
+.component3 .body{
+    margin: 3.2vw 0 0 2vw;
+}
+
+.component3 .row .body-text{
+    margin-top: 1vw;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    align-items: center;
+    line-height: 3.5rem;
+    color: #969696;
+}
+
+/* .component3 .row .col-5 img{
+    width : 35vw;
+    height: 23vw;
+    align-items: center;
+} */
+
+.learn-more{
+    height : 3.25rem;
+    width : 9.3rem;
+    background-color: #EC4897;
+    font-family: Poppins;
+    font-size : 1.25rem;
+    font-weight: 900;
+    font-style: normal; 
+    margin-top: 1vw;
+}
+
