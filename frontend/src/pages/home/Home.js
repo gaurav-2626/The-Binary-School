@@ -8,6 +8,7 @@ import Header from "../../core/Header.js";
 // components
 import Component1 from "./components/Component1.js";
 import Component2 from "./components/Component2.js";
+import Component3 from "./components/Component3.js";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Header />
       <Component1 />
       <Component2 />
+      <Component3 />
       <Footer />
     </div>
   );
