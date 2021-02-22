@@ -1,11 +1,11 @@
 // react libraries
 import React from "react";
 
-//header and footer
+// header and footer
 import Footer from "../../core/Footer.js";
 import Header from "../../core/Header.js";
 
-//components
+// components
 import Component1 from "./components/Component1.js";
 
 const Home = () => {

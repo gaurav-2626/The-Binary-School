@@ -5,24 +5,24 @@
   text-align: right;
 }
 
-.header .logo{
-  width  : 3.5rem;
-  height : 3.5rem;
+.header .logo {
+  width: 3.5rem;
+  height: 3.5rem;
   margin-left: 3.5vw;
 }
 
-.header .logo{
-  width  : 2.9rem;
-  height : 2.9rem;
+.header .logo {
+  width: 2.9rem;
+  height: 2.9rem;
   margin-left: 3.1vw;
 }
 
 .header .nav-link {
   font-family: Poppins;
-  font-style : normal;
+  font-style: normal;
   font-weight: bold;
-  font-size  : 1.2rem;
-  margin     : 0vw 1.5vw 0vw 1.5vw;
+  font-size: 1.2rem;
+  margin: 0vw 1.5vw 0vw 1.5vw;
   color: #545454;
 }
 
@@ -35,7 +35,7 @@
   /* margin-right: 2vw; */
   background: linear-gradient(to right, #ff5454 40%, #fdb797 100%);
   -webkit-background-clip: text;
-  background-clip : text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -43,9 +43,8 @@
   margin: 1vw 2.5vw 1vw 1vw;
 }
 
-
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .header .nav-link {
     margin: 1vw 4.5vw 1vw 3vw;
   }
-}
+} */
