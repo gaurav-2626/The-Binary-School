@@ -19,13 +19,12 @@ const Footer = () => {
   const [viewPortWidth, setViewPortWidth] = useState(window.innerWidth);
   const [viewPortHeight, setViewPortHeight] = useState(window.innerHeight);
 
-  // TODO: hooks
+  // TODO: hooks & prevent memory leak
   window.addEventListener("resize", () => {
     setViewPortWidth(window.innerWidth);
     setViewPortHeight(window.innerHeight);
   });
 
-  // TODO: here window.innerWidth should be replaced by something dynamic and local attribute
   const footerWidth = Math.max(viewPortHeight, viewPortWidth);
   const totalHeight = 600 * (footerWidth / 1920);
   const footerHeight = 400 * (footerWidth / 1920);
