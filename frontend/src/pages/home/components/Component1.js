@@ -8,6 +8,7 @@ import "../style/component1.css";
 import { ReactComponent as SVG1 } from "../../../uploads/illustration1.svg";
 
 const Component1 = () => {
+  console.log(window.innerWidth, window.innerHeight);
   return (
     <div className="container-fluid component-box">
       <div className="row justify-content-center">

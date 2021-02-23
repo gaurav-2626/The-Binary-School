@@ -1,5 +1,8 @@
 .component1 {
-  margin: 5vw 7vw;
+  margin: 5vw 8vw;
+}
+.component1 .col-6 {
+  padding: 0;
 }
 .component1 .head-text {
   font-family: "Poppins", sans-serif;
