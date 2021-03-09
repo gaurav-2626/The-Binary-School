@@ -25,10 +25,11 @@ const Footer = () => {
     setViewPortHeight(window.innerHeight);
   });
 
-  const footerWidth = Math.max(viewPortHeight, viewPortWidth);
+  const footerWidth = viewPortWidth;
   const totalHeight = 600 * (footerWidth / 1920);
   const footerHeight = 400 * (footerWidth / 1920);
 
+  // TODO: use better variable names
   const y = totalHeight - footerHeight;
   const a = [0, y];
   const b = [footerWidth, y];

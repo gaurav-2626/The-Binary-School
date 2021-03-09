@@ -2,8 +2,9 @@
 import React from "react";
 
 // header and footer
-import Footer from "../../core/Footer.js";
 import Header from "../../core/Header.js";
+import Footer from "../../core/Footer.js";
+import Video from "../../core/Video.js";
 
 // components
 import Component1 from "./components/Component1.js";
