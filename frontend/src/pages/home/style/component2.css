@@ -25,3 +25,15 @@
   color: #848484;
   padding-bottom: 3.75vw;
 }
+
+@media screen and (max-width: 575px) {
+  .heading {
+    font-size: 4vw;
+    padding-top: 4vw;
+    padding-bottom: 2vw;
+  }
+  .content {
+    font-size: 1.9vw;
+    line-height: 4.5vw;
+  }
+}
