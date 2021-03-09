@@ -15,7 +15,7 @@ const Component3 = () => {
             </div>
             <div className="row justify-content-center body">
                 <div className="col-sm-6 col-12">
-                    <div className="video-wrapper"><ReactPlayer className="react-player" url="https://www.youtube.com/watch?v=Dv7gLpW91DM" width="100%" height="100%" playing="true" controls={true} /></div>
+                    <div className="video-wrapper"><ReactPlayer className="react-player" url="https://www.youtube.com/watch?v=Dv7gLpW91DM" width="100%" height="100%" playing={true} controls={true} /></div>
                 </div>
                 <div className="col-sm-6 col-12 body-text">
                     Code is a medium of interaction between
