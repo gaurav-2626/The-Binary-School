@@ -1,9 +1,13 @@
-.rectangle{
-    text-align: center;
+.component2{
     background: rgba(233, 231, 231, 0.5);
 }
 
-.heading{
+.component2 .rectangle{
+    text-align: center;
+    
+}
+
+.component2 .heading{
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
@@ -12,9 +16,10 @@
     color: #545454;
     padding-top: 3vw;
     padding-bottom: 2.5vw;
+    text-align: center;
 }
 
-.content{
+.component2 .content{
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
