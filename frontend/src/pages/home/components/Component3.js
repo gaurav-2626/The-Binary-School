@@ -18,7 +18,7 @@ const Component3 = () => {
         </div>
       </div>
       <div className="row justify-content-center body">
-        <div className="col-sm-6">
+        <div className="col-sm-6 video-box">
           <div className="video-wrapper">
             <Video url="https://player.vimeo.com/video/117709376" />
           </div>
