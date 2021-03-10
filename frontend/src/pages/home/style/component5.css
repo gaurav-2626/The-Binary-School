@@ -1,0 +1,36 @@
+.component5{
+    /* padding-top: 100px; */
+}
+.component5 .card{
+    width: 398px;
+    height: 480px;
+}
+
+.component5 .svg1{
+    height: 200px;
+    width: 200px;
+}
+
+.component5 .card-title{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #545454;
+}
+
+.component5 .card-row{
+    padding-left: 100px;
+    padding-right: 80px;
+    padding-top: 100px;
+}
+
+.component5 .card-text{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 35px;
+    color: #848484;
+}
