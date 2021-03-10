@@ -13,7 +13,7 @@ const Component1 = () => {
       <div className="row justify-content-center">
         <div className="col component1">
           <div className="row">
-            <div className="col-6">
+            <div className="col-sm-6 component-partition">
               <div className="head-text">
                 LEARN THE MAGIC OF <span>COMPUTERS</span>
               </div>
@@ -23,7 +23,7 @@ const Component1 = () => {
                 exciting journey.
               </div>
             </div>
-            <div className="col-6 svg1-box">
+            <div className="col-sm-6 svg1-box component-partition">
               <SVG1 className="svg1" />
             </div>
           </div>
