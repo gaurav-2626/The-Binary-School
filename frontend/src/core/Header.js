@@ -1,15 +1,18 @@
 import React from "react";
 
-//router
+// router
 import { Link, withRouter } from "react-router-dom";
 
-//css
+// css
 import "./helper/header.css";
 
-//assets
+// assets
 import companyLogo from "../uploads/{b}.svg";
 
-//function
+// components
+import Login from "./Login.js";
+
+// function
 const Header = () => {
   return (
     <div>
@@ -47,13 +50,19 @@ const Header = () => {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/login">
+              <Link
+                className="nav-link"
+                to="#"
+                data-toggle="modal"
+                data-target=".login-modal"
+              >
                 <span className="login-button">LOGIN</span>
               </Link>
             </li>
           </ul>
         </div>
       </nav>
+      <Login />
     </div>
   );
 };
