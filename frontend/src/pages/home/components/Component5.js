@@ -45,24 +45,24 @@ const Component5 = () => {
     return (
         <div className="component5">
             <div className="row card-row">
-                <div className="col-4">
+                <div className="col-6 col-sm-4">
                     {card(heading1,content1,Svg1)}
                 </div>
-                <div className="col-4">
+                <div className="col-6 col-sm-4">
                     {card(heading2,content2,Svg2)}
                 </div>
-                <div className="col-4">
+                <div className="col-6 col-sm-4">
                     {card(heading3,content3,Svg3)}
                 </div>
-            </div>
-            <div className="row card-row">
-                <div className="col-4">
+            {/* </div>
+            <div className="row card-row"> */}
+                <div className="col-6 col-sm-4">
                     {card(heading4,content4,Svg4)}
                 </div>
-                <div className="col-4">
+                <div className="col-6 col-sm-4">
                     {card(heading5,content5,Svg5)}
                 </div>
-                <div className="col-4">
+                <div className="col-6 col-sm-4">
                     {card(heading6,content6,Svg6)}
                 </div>
             </div>
