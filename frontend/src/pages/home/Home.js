@@ -11,6 +11,7 @@ import Component1 from "./components/Component1.js";
 import Component2 from "./components/Component2.js";
 import Component3 from "./components/Component3.js";
 import Component4 from "./components/Component4.js";
+import Component6 from "./components/component6/Component6.js";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Component2 />
       <Component3 />
       <Component4 />
+      <Component6 />
       <Footer />
     </div>
   );
