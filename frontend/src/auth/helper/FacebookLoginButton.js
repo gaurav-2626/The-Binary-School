@@ -35,7 +35,7 @@ const FacebookLoginButton = ({ reload = undefined, setReload = (f) => f }) => {
   return (
     <div>
       <FacebookLogin
-        appId="346088620055036"
+        appId={process.env.FACEBOOK_CLIENT_ID}
         render={(renderProps) => {
           return (
             <button className="btn" onClick={renderProps.onClick}>
