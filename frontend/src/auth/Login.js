@@ -5,11 +5,11 @@ import React from "react";
 import "./helper/login.css";
 
 // components
-import { ReactComponent as GoogleIcon } from "../uploads/google.svg";
-import { ReactComponent as FacebookIcon } from "../uploads/facebook.svg";
+import GoogleLoginButton from "./helper/GoogleLoginButton";
+import FacebookLoginButton from "./helper/FacebookLoginButton";
 import { ReactComponent as GithubIcon } from "../uploads/github.svg";
 
-const Login = () => {
+const Login = ({ reload = undefined, setReload = (f) => f }) => {
   // TODO: use modular values instead of constants
   const y = 30;
   const footerWidth = 350;
@@ -55,19 +55,14 @@ const Login = () => {
       </svg>
     </div>
   );
+  // check if the google button glitch (color fade) still exists
   const loginBody = (
     <div className="login-body">
       <div className="google-login">
-        <button className="btn">
-          <GoogleIcon className="google-icon" />
-          Sign In using Google
-        </button>
+        <GoogleLoginButton reload={reload} setReload={setReload} />
       </div>
       <div className="facebook-login">
-        <button className="btn">
-          <FacebookIcon className="facebook-icon" />
-          Sign In using Facebook
-        </button>
+        <FacebookLoginButton reload={reload} setReload={setReload} />
       </div>
       <div className="github-login">
         <button className="btn">
