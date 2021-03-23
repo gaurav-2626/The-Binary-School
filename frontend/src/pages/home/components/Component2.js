@@ -3,7 +3,7 @@ import "../style/component2.css"
 
 const Component2 = () => {
     return (
-        <div className="rectangle container-fluid">
+        <div className="component2 rectangle container-fluid">
             <div className="heading">
                 What is a <span style={{color:"#FF5454"}}>COMPUTER</span> ?
             </div>

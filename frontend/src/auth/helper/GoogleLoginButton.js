@@ -38,7 +38,7 @@ const GoogleLoginButton = ({ reload = undefined, setReload = (f) => f }) => {
   return (
     <div>
       <GoogleLogin
-        clientId="827996575367-cksgop3u92u4nnh8qrete0mob0hcunea.apps.googleusercontent.com"
+        clientId={process.env.GOOGLE_CLIENT_ID}
         render={(renderProps) => {
           return (
             <button
