@@ -7,7 +7,6 @@ import "./helper/login.css";
 // components
 import GoogleLoginButton from "./helper/GoogleLoginButton";
 import FacebookLoginButton from "./helper/FacebookLoginButton";
-import { ReactComponent as GithubIcon } from "../uploads/github.svg";
 
 const Login = ({ reload = undefined, setReload = (f) => f }) => {
   // TODO: use modular values instead of constants
@@ -63,12 +62,6 @@ const Login = ({ reload = undefined, setReload = (f) => f }) => {
       </div>
       <div className="facebook-login">
         <FacebookLoginButton reload={reload} setReload={setReload} />
-      </div>
-      <div className="github-login">
-        <button className="btn">
-          <GithubIcon className="github-icon" />
-          Sign In using Github
-        </button>
       </div>
     </div>
   );
