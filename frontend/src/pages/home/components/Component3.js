@@ -10,15 +10,11 @@ import Video from "../../../core/Video.js";
 const Component3 = () => {
   return (
     <div className="container-fluid scroll component3">
-      <div className="row justify-content-center">
-        <div className="col head">
-          <div className="head-text">
-            Why learn to <span>CODE </span>?
-          </div>
-        </div>
+      <div className="head-text">
+        Why learn to <span>CODE </span>?
       </div>
       <div className="row justify-content-center body">
-        <div className="col-sm-6">
+        <div className="col-sm-6 video-box">
           <div className="video-wrapper">
             <Video url="https://player.vimeo.com/video/117709376" />
           </div>

@@ -1,6 +1,5 @@
-import React from "react";
-
-// router
+// react libraries
+import React, { useState } from "react";
 import { Link, withRouter } from "react-router-dom";
 
 // css
@@ -10,10 +9,15 @@ import "./helper/header.css";
 import companyLogo from "../uploads/{b}.svg";
 
 // components
-import Login from "./Login.js";
+import Login from "../auth/Login.js";
+
+// helper
+import { isAuthenticated, signout } from "../auth/helper/index.js";
 
 // function
 const Header = () => {
+  const [reload, setReload] = useState(false);
+  const user = isAuthenticated();
   return (
     <div>
       <nav className="navbar navbar-expand-lg container-fluid header">
@@ -42,27 +46,46 @@ const Header = () => {
                 COURSE
               </Link>
             </li>
-
             <li className="nav-item">
               <Link className="nav-link" to="/team">
                 TEAM
               </Link>
             </li>
-
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="#"
-                data-toggle="modal"
-                data-target=".login-modal"
-              >
-                <span className="login-button">LOGIN</span>
-              </Link>
-            </li>
+            {!user && (
+              <li className="nav-item">
+                <Link
+                  className="nav-link login-button"
+                  to="#"
+                  data-toggle="modal"
+                  data-target=".login-modal"
+                >
+                  <span className="login-button-text">LOGIN</span>
+                </Link>
+              </li>
+            )}
+            {user && (
+              <li className="nav-item user-profile">
+                <Link
+                  className="logout-button"
+                  to="#"
+                  onClick={() => {
+                    signout(() => {
+                      // handle post-logout events
+                    });
+                  }}
+                >
+                  <img
+                    className="user-profile-image"
+                    src={user.profile.image_url}
+                    alt={user.profile.name}
+                  />
+                </Link>
+              </li>
+            )}
           </ul>
         </div>
       </nav>
-      <Login />
+      <Login reload={reload} setReload={setReload} />
     </div>
   );
 };
