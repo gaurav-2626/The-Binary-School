@@ -55,18 +55,13 @@
   background-color: #3c79e6;
   color: white;
 }
-.login-modal-box .login-body .github-login button {
-  background-color: #3d3d3d;
-  color: white;
-}
+
 .login-modal-box .login-body .google-icon,
-.login-modal-box .login-body .facebook-icon,
-.login-modal-box .login-body .github-icon {
+.login-modal-box .login-body .facebook-icon {
   width: 30px;
   height: 30px;
   margin-right: 25px;
 }
-.login-modal-box .login-body .facebook-icon,
-.login-modal-box .login-body .github-icon {
+.login-modal-box .login-body .facebook-icon {
   fill: white;
 }

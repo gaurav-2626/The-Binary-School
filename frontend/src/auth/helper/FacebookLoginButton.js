@@ -32,6 +32,7 @@ const FacebookLoginButton = ({ reload = undefined, setReload = (f) => f }) => {
         console.log(error);
       });
   };
+  console.log(process.env.REACT_APP_FACEBOOK_CLIENT_ID);
   return (
     <div>
       <FacebookLogin
