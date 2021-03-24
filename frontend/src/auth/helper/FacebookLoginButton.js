@@ -32,11 +32,10 @@ const FacebookLoginButton = ({ reload = undefined, setReload = (f) => f }) => {
         console.log(error);
       });
   };
-  console.log(process.env.REACT_APP_FACEBOOK_CLIENT_ID);
   return (
     <div>
       <FacebookLogin
-        appId={process.env.FACEBOOK_CLIENT_ID}
+        appId={process.env.REACT_APP_FACEBOOK_CLIENT_ID}
         render={(renderProps) => {
           return (
             <button className="btn" onClick={renderProps.onClick}>
@@ -45,7 +44,7 @@ const FacebookLoginButton = ({ reload = undefined, setReload = (f) => f }) => {
             </button>
           );
         }}
-        autoLoad={true}
+        autoLoad={false}
         fields="name,email,picture"
         callback={facebookLogin}
       />
