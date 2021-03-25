@@ -7,7 +7,7 @@ import { ReactComponent as FacebookIcon } from "../../uploads/facebook.svg";
 // helper
 import { authenticate, facebookLoginAPICall } from "./index.js";
 
-const FacebookLoginButton = ({ reload = undefined, setReload = (f) => f }) => {
+const FacebookLoginButton = () => {
   const facebookLogin = (res) => {
     // check if res contains error
     facebookLoginAPICall(res.accessToken, res.id)
@@ -23,9 +23,7 @@ const FacebookLoginButton = ({ reload = undefined, setReload = (f) => f }) => {
           },
         };
         authenticate(user, () => {
-          // check if refresh is required or not?
-          // force reload
-          setReload(!reload);
+          window.location.reload();
         });
       })
       .catch((error) => {

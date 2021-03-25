@@ -16,8 +16,8 @@ import { isAuthenticated, signout } from "../auth/helper/index.js";
 
 // function
 const Header = () => {
-  const [reload, setReload] = useState(false);
   const user = isAuthenticated();
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg container-fluid header">
@@ -71,6 +71,7 @@ const Header = () => {
                   onClick={() => {
                     signout(() => {
                       // handle post-logout events
+                      window.location.reload();
                     });
                   }}
                 >
@@ -85,7 +86,7 @@ const Header = () => {
           </ul>
         </div>
       </nav>
-      <Login reload={reload} setReload={setReload} />
+      {!user && <Login />}
     </div>
   );
 };

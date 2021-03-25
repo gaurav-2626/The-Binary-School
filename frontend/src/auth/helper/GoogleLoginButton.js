@@ -7,7 +7,7 @@ import { ReactComponent as GoogleIcon } from "../../uploads/google.svg";
 // helper
 import { authenticate, googleLoginAPICall } from "./index.js";
 
-const GoogleLoginButton = ({ reload = undefined, setReload = (f) => f }) => {
+const GoogleLoginButton = () => {
   const googleLoginSuccess = (res) => {
     // check if res contains error
     googleLoginAPICall(res.accessToken, res.profileObj.googleId)
@@ -23,9 +23,7 @@ const GoogleLoginButton = ({ reload = undefined, setReload = (f) => f }) => {
           },
         };
         authenticate(user, () => {
-          // check if refresh is required or not?
-          // force reload
-          setReload(!reload);
+          window.location.reload();
         });
       })
       .catch((error) => {
