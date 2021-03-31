@@ -1,10 +1,6 @@
 // react libraries
 import React from "react";
 
-// header and footer
-import Header from "../../core/Header.js";
-import Footer from "../../core/Footer.js";
-
 // components
 import Component1 from "./components/Component1.js";
 import Component2 from "./components/Component2.js";
@@ -15,13 +11,11 @@ import Component4 from "./components/Component4.js";
 const Home = () => {
   return (
     <div>
-      <Header />
       <Component1 />
       <Component2 />
       <Component3 />
       <Component4 />
       <Component5 />
-      <Footer />
     </div>
   );
 };

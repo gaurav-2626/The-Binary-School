@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link, withRouter } from "react-router-dom";
 
 // css
-import "./helper/header.css";
+import "./stylesheets/header.css";
 
 // assets
 import companyLogo from "../uploads/{b}.svg";
@@ -12,7 +12,7 @@ import companyLogo from "../uploads/{b}.svg";
 import Login from "../auth/Login.js";
 
 // helper
-import { isAuthenticated, signout } from "../auth/helper/index.js";
+import { isAuthenticated, signout } from "../auth/helper/api.js";
 
 // function
 const Header = () => {

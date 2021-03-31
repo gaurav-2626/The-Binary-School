@@ -5,7 +5,7 @@ import FacebookLogin from "react-facebook-login/dist/facebook-login-render-props
 import { ReactComponent as FacebookIcon } from "../../uploads/facebook.svg";
 
 // helper
-import { authenticate, facebookLoginAPICall } from "./index.js";
+import { authenticate, facebookLoginAPICall } from "./api.js";
 
 const FacebookLoginButton = () => {
   const facebookLogin = (res) => {

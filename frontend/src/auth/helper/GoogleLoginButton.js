@@ -5,7 +5,7 @@ import GoogleLogin from "react-google-login";
 import { ReactComponent as GoogleIcon } from "../../uploads/google.svg";
 
 // helper
-import { authenticate, googleLoginAPICall } from "./index.js";
+import { authenticate, googleLoginAPICall } from "./api.js";
 
 const GoogleLoginButton = () => {
   const googleLoginSuccess = (res) => {

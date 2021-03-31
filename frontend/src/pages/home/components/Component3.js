@@ -2,10 +2,10 @@
 import React from "react";
 
 // stylesheets
-import "../style/component3.css";
+import "../stylesheets/component3.css";
 
 // components
-import Video from "../../../core/Video.js";
+import Video from "../../../core/helper/Video.js";
 
 const Component3 = () => {
   return (

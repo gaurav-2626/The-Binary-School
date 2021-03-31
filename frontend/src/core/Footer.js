@@ -3,7 +3,7 @@ import { React, useState, useEffect } from "react";
 import { Link, withRouter } from "react-router-dom";
 
 // stylesheets
-import "./helper/footer.css";
+import "./stylesheets/footer.css";
 
 // components
 import { ReactComponent as LocationIcon } from "../uploads/pin.svg";
