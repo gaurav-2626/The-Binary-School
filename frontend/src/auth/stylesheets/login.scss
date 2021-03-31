@@ -43,13 +43,17 @@
       text-align: left;
       padding: 7px;
     }
-    .google-login button {
-      background-color: white;
-      color: #317196;
+    .google-login {
+      button {
+        background-color: white;
+        color: #317196;
+      }
     }
-    .facebook-login button {
-      background-color: #3c79e6;
-      color: white;
+    .facebook-login {
+      button {
+        background-color: #3c79e6;
+        color: white;
+      }
     }
     .google-icon,
     .facebook-icon {
