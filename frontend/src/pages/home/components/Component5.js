@@ -1,5 +1,5 @@
 import React from "react";
-import "../stylesheets/component5.css";
+import "../stylesheets/component5.scss";
 import { ReactComponent as Svg1 } from "../../../uploads/component5/problemSolving.svg";
 import { ReactComponent as Svg2 } from "../../../uploads/component5/codingAptitude.svg";
 import { ReactComponent as Svg3 } from "../../../uploads/component5/web&Android.svg";

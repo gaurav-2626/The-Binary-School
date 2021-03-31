@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 
-import "../stylesheets/component4.css";
+import "../stylesheets/component4.scss";
 
 import { ReactComponent as TitleIcon } from "../../../uploads/comp5.svg";
 

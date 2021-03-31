@@ -2,7 +2,7 @@
 import React from "react";
 
 // stylesheets
-import "../stylesheets/component1.css";
+import "../stylesheets/component1.scss";
 
 // components
 import { ReactComponent as SVG1 } from "../../../uploads/hero_svg.svg";
