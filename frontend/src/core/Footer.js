@@ -18,7 +18,6 @@ const Footer = () => {
   const footerWidth = 1920;
   const totalHeight = 600 * (footerWidth / 1920);
   const footerHeight = 400 * (footerWidth / 1920);
-
   // TODO: use better variable names
   const y = totalHeight - footerHeight;
   const a = [0, y];
@@ -61,8 +60,8 @@ const Footer = () => {
     <div className="footer-vectors">
       <svg
         className="footer-svg"
-        height="600"
-        width="1920"
+        height={totalHeight}
+        width={footerWidth}
         viewBox="0 0 1920 600"
       >
         <defs>
