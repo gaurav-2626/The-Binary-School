@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link, withRouter } from "react-router-dom";
 
 // css
-import "./stylesheets/header.css";
+import "./stylesheets/header.scss";
 
 // assets
 import companyLogo from "../uploads/{b}.svg";

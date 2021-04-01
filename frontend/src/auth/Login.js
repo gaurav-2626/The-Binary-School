@@ -3,7 +3,7 @@ import React from "react";
 import { Redirect } from "react-router-dom";
 
 // stylesheets
-import "./stylesheets/login.css";
+import "./stylesheets/login.scss";
 
 // components
 import GoogleLoginButton from "./helper/GoogleLoginButton";

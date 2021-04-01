@@ -1,22 +1,12 @@
 import { React, useState } from "react";
 
-import "../stylesheets/component4.css";
+import "../stylesheets/component4.scss";
 
 import { ReactComponent as TitleIcon } from "../../../uploads/comp5.svg";
 
 const Component4 = () => {
-  // states
-  const [viewPortWidth, setViewPortWidth] = useState(window.innerWidth);
-  const [viewPortHeight, setViewPortHeight] = useState(window.innerHeight);
-
-  // TODO: hooks & prevent memory leak
-  window.addEventListener("resize", () => {
-    setViewPortWidth(window.innerWidth);
-    setViewPortHeight(window.innerHeight);
-  });
-
-  const svgWidth = viewPortWidth;
-  const svgHeight = 750 * (viewPortWidth / 1536);
+  const svgWidth = 1536;
+  const svgHeight = 750 * (svgWidth / 1536);
 
   const radius = 0.015 * svgWidth;
 
@@ -88,7 +78,13 @@ const Component4 = () => {
   const svg = (
     <div>
       <div className="timeline-vectors">
-        <svg height={svgHeight} width="100%" fill="none">
+        <svg
+          className="timeline-svg"
+          height="750"
+          width="1536"
+          viewBox="0 0 1536 750"
+          fill="none"
+        >
           {circle1}
           {path1}
           {circle2}

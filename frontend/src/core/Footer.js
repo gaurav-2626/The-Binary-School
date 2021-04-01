@@ -3,7 +3,7 @@ import { React, useState, useEffect } from "react";
 import { Link, withRouter } from "react-router-dom";
 
 // stylesheets
-import "./stylesheets/footer.css";
+import "./stylesheets/footer.scss";
 
 // components
 import { ReactComponent as LocationIcon } from "../uploads/pin.svg";
@@ -15,17 +15,7 @@ import { ReactComponent as YoutubeIcon } from "../uploads/youtube.svg";
 import { ReactComponent as LinkedinIcon } from "../uploads/linkedin.svg";
 
 const Footer = () => {
-  // states
-  const [viewPortWidth, setViewPortWidth] = useState(window.innerWidth);
-  const [viewPortHeight, setViewPortHeight] = useState(window.innerHeight);
-
-  // TODO: hooks & prevent memory leak
-  window.addEventListener("resize", () => {
-    setViewPortWidth(window.innerWidth);
-    setViewPortHeight(window.innerHeight);
-  });
-
-  const footerWidth = viewPortWidth;
+  const footerWidth = 1920;
   const totalHeight = 600 * (footerWidth / 1920);
   const footerHeight = 400 * (footerWidth / 1920);
 
@@ -69,7 +59,12 @@ const Footer = () => {
 
   const footerVectors = (
     <div className="footer-vectors">
-      <svg height={totalHeight} width="100%">
+      <svg
+        className="footer-svg"
+        height="600"
+        width="1920"
+        viewBox="0 0 1920 600"
+      >
         <defs>
           <linearGradient id="gradient1" x1="65%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="#FDB797" />
