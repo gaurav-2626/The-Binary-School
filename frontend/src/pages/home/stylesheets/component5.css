@@ -3,14 +3,16 @@
 }
 .component5 .card{
     width: 25.87vw;
-    height: 32.5vw;
+    height: 34vw;
     border: none;
     margin-top: 2.5vw;
+    transition: box-shadow 500ms;
 }
 
 .component5 .svg1{
     height: 19.5vw;
     width: 19.5vw;
+    transition: transform 500ms;
 }
 
 .component5 .card-title{
@@ -37,39 +39,45 @@
     color: #848484;
 }
 
-.component5 .card:hover{
+.component5 .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.component5 .card-body{
+    padding: 2vw
+}
+
+.component5 .card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    transition-timing-function: ease-out;
+}
+
+.component5 .card:hover .svg1{
     transform: scale(1.05);
- box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    transition-timing-function: ease-out;
 }
 
 @media screen and (max-width: 1000px)
 {
     .component5 .card{
-        width: 25.87vw;
-        height: 40vw;
-        border: none;
+        height: 38vw;
+        margin-top: 3.5vw;
     }
+
     .component5 .card-title{
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: bold;
         font-size: 1.75vw;
-        /* line-height: 1.95vw; */
-        color: #545454;
     }
+
     .component5 .card-text{
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: normal;
         font-size: 1.5vw;
-        line-height: 1.95vw;
-        color: #848484;
     }
+
     .component5 .card-row{
         padding-left: 7.5vw;
         padding-right: 4.5vw;
-        padding-top: 0.975vw;
     }
+
 }
 
 @media screen and (max-width: 576px)
@@ -77,6 +85,24 @@
     .component5 .card-row{
         padding-left: 14vw;
         padding-right: 4.5vw;
-        padding-top: 0.975vw;
+    }
+
+    .component5 .card-title{
+        margin-bottom: 2vw;
+    }
+
+    .component5 .svg1{
+        height: 16vw;
+    }
+
+    .component5 .card{
+        height: 33vw;
+        border: none;
+        margin-top: 4vw;
+    }
+
+    .component5 .card-text{
+        font-size: 1.5vw;
+        line-height: 2.1vw;
     }
 }
