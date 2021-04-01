@@ -1,108 +1,96 @@
 .component5{
     padding-top: 2.275vw;
-}
-.component5 .card{
-    width: 25.87vw;
-    height: 34vw;
-    border: none;
-    margin-top: 2.5vw;
-    transition: box-shadow 500ms;
-}
-
-.component5 .svg1{
-    height: 19.5vw;
-    width: 19.5vw;
-    transition: transform 500ms;
-}
-
-.component5 .card-title{
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.625vw;
-    line-height: 1.95vw;
-    color: #545454;
-}
-
-.component5 .card-row{
-    padding-left: 6.5vw;
-    padding-right: 5.2vw;
-    padding-top: 0.975vw;
-}
-
-.component5 .card-text{
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.3vw;
-    line-height: 1.95vw;
-    color: #848484;
-}
-
-.component5 .row{
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.component5 .card-body{
-    padding: 2vw
-}
-
-.component5 .card:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-    transition-timing-function: ease-out;
-}
-
-.component5 .card:hover .svg1{
-    transform: scale(1.05);
-    transition-timing-function: ease-out;
+    .card{
+        width: 25.87vw;
+        height: 34vw;
+        border: none;
+        margin-top: 2.5vw;
+        transition: box-shadow 500ms;
+    }
+    .svg1{
+        height: 19.5vw;
+        width: 19.5vw;
+        transition: transform 500ms;
+    }
+    .card-title{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.625vw;
+        line-height: 1.95vw;
+        color: #545454;
+    }
+    .card-row{
+        padding-left: 6.5vw;
+        padding-right: 5.2vw;
+        padding-top: 0.975vw;
+    }
+    .card-text{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.3vw;
+        line-height: 1.95vw;
+        color: #848484;
+    }
+    .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .card-body{
+        padding: 2vw
+    }
+    .card:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+        transition-timing-function: ease-out;
+    }
+    .card:hover .svg1{
+        transform: scale(1.05);
+        transition-timing-function: ease-out;
+    }
 }
 
 @media screen and (max-width: 1000px)
 {
-    .component5 .card{
-        height: 38vw;
-        margin-top: 3.5vw;
+    .component5 {
+        .card{
+            height: 38vw;
+            margin-top: 3.5vw;
+        }
+        .card-title{
+            font-size: 1.75vw;
+        }
+        .card-text{
+            font-size: 1.5vw;
+        }
+        .card-row{
+            padding-left: 7.5vw;
+            padding-right: 4.5vw;
+        }
     }
-
-    .component5 .card-title{
-        font-size: 1.75vw;
-    }
-
-    .component5 .card-text{
-        font-size: 1.5vw;
-    }
-
-    .component5 .card-row{
-        padding-left: 7.5vw;
-        padding-right: 4.5vw;
-    }
-
 }
 
 @media screen and (max-width: 576px)
 {
-    .component5 .card-row{
-        padding-left: 14vw;
-        padding-right: 4.5vw;
-    }
-
-    .component5 .card-title{
-        margin-bottom: 2vw;
-    }
-
-    .component5 .svg1{
-        height: 16vw;
-    }
-
-    .component5 .card{
-        height: 33vw;
-        border: none;
-        margin-top: 4vw;
-    }
-
-    .component5 .card-text{
-        font-size: 1.5vw;
-        line-height: 2.1vw;
+    .component5 {
+        .card-row{
+            padding-left: 14vw;
+            padding-right: 4.5vw;
+        }
+        .card-title{
+            margin-bottom: 2vw;
+        }
+        .svg1{
+            height: 16vw;
+        }
+        .card{
+            height: 33vw;
+            border: none;
+            margin-top: 4vw;
+        }
+        .card-text{
+            font-size: 1.5vw;
+            line-height: 2.1vw;
+        }
     }
 }
