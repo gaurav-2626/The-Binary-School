@@ -2,7 +2,7 @@
 import React from "react";
 
 // stylesheets
-import "../stylesheets/component3.css";
+import "../stylesheets/component3.scss";
 
 // components
 import Video from "../../../core/helper/Video.js";

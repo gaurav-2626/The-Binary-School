@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link, withRouter } from "react-router-dom";
 
 // css
-import "./stylesheets/header.css";
+import "./stylesheets/header.scss";
 
 // assets
 import companyLogo from "../uploads/{b}.svg";
@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg container-fluid header">
+      <nav className="navbar navbar-expand-lg container-fluid header fixed-top">
         <div className="navbar-brand">
           <img src={companyLogo} alt="logo" className="logo" />
         </div>
@@ -79,6 +79,7 @@ const Header = () => {
                     className="user-profile-image"
                     src={user.profile.image_url}
                     alt={user.profile.name}
+                    referrerPolicy="no-referrer"
                   />
                 </Link>
               </li>
