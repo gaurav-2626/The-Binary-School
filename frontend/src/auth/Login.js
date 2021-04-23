@@ -1,14 +1,15 @@
 // react libraries
 import React from "react";
+import { Redirect } from "react-router-dom";
 
 // stylesheets
-import "./helper/login.css";
+import "./stylesheets/login.scss";
 
 // components
 import GoogleLoginButton from "./helper/GoogleLoginButton";
 import FacebookLoginButton from "./helper/FacebookLoginButton";
 
-const Login = ({ reload = undefined, setReload = (f) => f }) => {
+const Login = () => {
   // TODO: use modular values instead of constants
   const y = 30;
   const footerWidth = 350;
@@ -58,10 +59,10 @@ const Login = ({ reload = undefined, setReload = (f) => f }) => {
   const loginBody = (
     <div className="login-body">
       <div className="google-login">
-        <GoogleLoginButton reload={reload} setReload={setReload} />
+        <GoogleLoginButton />
       </div>
       <div className="facebook-login">
-        <FacebookLoginButton reload={reload} setReload={setReload} />
+        <FacebookLoginButton />
       </div>
     </div>
   );

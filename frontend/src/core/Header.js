@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link, withRouter } from "react-router-dom";
 
 // css
-import "./helper/header.css";
+import "./stylesheets/header.scss";
 
 // assets
 import companyLogo from "../uploads/{b}.svg";
@@ -12,15 +12,15 @@ import companyLogo from "../uploads/{b}.svg";
 import Login from "../auth/Login.js";
 
 // helper
-import { isAuthenticated, signout } from "../auth/helper/index.js";
+import { isAuthenticated, signout } from "../auth/helper/api.js";
 
 // function
 const Header = () => {
-  const [reload, setReload] = useState(false);
   const user = isAuthenticated();
+
   return (
     <div>
-      <nav className="navbar navbar-expand-lg container-fluid header">
+      <nav className="navbar navbar-expand-lg container-fluid header fixed-top">
         <div className="navbar-brand">
           <img src={companyLogo} alt="logo" className="logo" />
         </div>
@@ -71,6 +71,7 @@ const Header = () => {
                   onClick={() => {
                     signout(() => {
                       // handle post-logout events
+                      window.location.reload();
                     });
                   }}
                 >
@@ -78,6 +79,7 @@ const Header = () => {
                     className="user-profile-image"
                     src={user.profile.image_url}
                     alt={user.profile.name}
+                    referrerPolicy="no-referrer"
                   />
                 </Link>
               </li>
@@ -85,7 +87,7 @@ const Header = () => {
           </ul>
         </div>
       </nav>
-      <Login reload={reload} setReload={setReload} />
+      {!user && <Login />}
     </div>
   );
 };

@@ -18,5 +18,5 @@ app.use("/api/v1", authRoutes);
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
-  console.log("SERVER IS RUNNING!");
+  console.log(`SERVER IS RUNNING ON PORT ${port}`);
 });
